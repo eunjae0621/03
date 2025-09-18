@@ -3,16 +3,14 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(void) 
+int main(void)
 {
-	char c;
-	int i;
+	char ch;
 	
-	printf("input a number :");
-	scanf("%c", &c);
+	printf("enter a character : ");
+	scanf("%c", &ch);
 	
-	i = c - '0'; 
-	printf("The input number is %i\n", i);
+	printf("the next character of %c (%i) is %c (%i)\n", ch, ch, ch + 1, ch + 1);
 	
 	return 0;
 }
